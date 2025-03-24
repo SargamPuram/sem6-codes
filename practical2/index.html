@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tandoori Treats - Indian Restaurant</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Internal CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f6f2;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #ff5722;
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background: #333;
+            padding: 15px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 20px;
+        }
+
+        nav a:hover {
+            background: #ff5722;
+            border-radius: 5px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            padding: 40px 20px;
+        }
+
+        .section {
+            flex: 1;
+            margin: 15px;
+            background: white;
+            box-shadow: 0 0 10px #ccc;
+            border-radius: 8px;
+            padding: 20px;
+        }
+
+        .section img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background: #ff5722;
+            color: white;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        form label, form input, form textarea {
+            margin-bottom: 15px;
+        }
+
+        form input, form textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+
+        form button {
+            background: #ff5722;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background: #333;
+        }
+
+        footer {
+            text-align: center;
+            background: #333;
+            color: white;
+            padding: 15px 0;
+            margin-top: 20px;
+        }
+
+        /* Frame Styling */
+        iframe {
+            width: 100%;
+            height: 400px;
+            border: none;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Tandoori Treats 🍲</h1>
+    <p>Experience Authentic Indian Flavors</p>
+</header>
+
+<!-- Navigation Links -->
+<nav>
+    <a href="#menu">Menu</a>
+    <a href="#about">About Us</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<!-- Frame Section -->
+<div class="container" style="margin-bottom: 20px;">
+    <div class="section">
+        <h2>🌍 Our Location (Using Frame)</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.257372948856!2d73.85625597519407!3d18.516726882574692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2c0666163b6c3%3A0x3b4d8a4b227e594a!2sPune%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1648995760771!5m2!1sen!2sin" allowfullscreen=""></iframe>
+    </div>
+</div>
+
+<div class="container">
+
+    <!-- Menu Section -->
+    <div class="section" id="menu">
+        <h2>🍛 Our Menu</h2>
+        <img src="menu.jpg" alt="Indian Food Menu" style="border: 2px solid #ff5722;"> <!-- Inline CSS -->
+        <ul>
+            <li>Butter Chicken - ₹350</li>
+            <li>Paneer Tikka - ₹280</li>
+            <li>Masala Dosa - ₹150</li>
+            <li>Gulab Jamun (2 pcs) - ₹100</li>
+        </ul>
+    </div>
+
+    <!-- About Us Section -->
+    <div class="section" id="about">
+        <h2>👨‍🍳 About Us</h2>
+        <img src="restaurant.jpg" alt="Indian Restaurant Interior">
+        <p>At <strong>Tandoori Treats</strong>, we bring you the authentic flavors of India. From mouth-watering curries to delectable desserts, our chefs use traditional spices and fresh ingredients to create unforgettable dishes.</p>
+    </div>
+</div>
+
+<!-- Contact Section -->
+<section class="section" id="contact" style="margin: 20px;">
+    <h2>📞 Contact Us</h2>
+    <form action="submit_form.php" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" placeholder="Your Message" rows="4" required></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2025 Tandoori Treats. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
