@@ -1,0 +1,22 @@
+<?xml-stylesheet type="text/css" href="employees.css"?>
+<!DOCTYPE Employees SYSTEM "employees.dtd">
+<?xml-stylesheet type="text/xsl" href="employees.xsl"?>
+
+<Employees>
+<Employee>
+<EmployeeID>101</EmployeeID>
+<Name>Divya Shetty</Name>
+<Department>IT</Department>
+<Designation>Software Engineer</Designation>
+<Salary>50000</Salary>
+<Email>divya@example.com</Email>
+</Employee>
+<Employee>
+<EmployeeID>102</EmployeeID>
+<Name>Akansha Sharma</Name>
+<Department>HR</Department>
+<Designation>HR Manager</Designation>
+<Salary>87000</Salary>
+<Email>akansha@example.com</Email>
+</Employee>
+</Employees>
